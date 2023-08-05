@@ -16,9 +16,7 @@ let time = 59;
 let finish;
 let ten = 9;
 
-
 const start = document.querySelector(".btn1");
-
 start.onclick = function () {
   finish = setInterval(function () {
     sec.innerText = time;
