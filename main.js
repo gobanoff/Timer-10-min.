@@ -9,7 +9,7 @@ timer.innerHTML += `<div id="set"><div id="display">10
 <button class="btn2">STOP</button>
 <button class="btn3">RESET</button>
 </div>`;
-
+const set1 = document.getElementById("#set1");
 const sec = document.querySelector("#display1");
 const min = document.querySelector("#display");
 let time = 59;
@@ -21,7 +21,7 @@ start.onclick = function () {
   finish = setInterval(function () {
     sec.innerText = time;
     min.innerText = `0${ten}`;
-
+   
     if (time < 0) {
       time = 59;
     }
